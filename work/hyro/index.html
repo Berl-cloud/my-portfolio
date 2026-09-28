@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HYRO Exchange — Berlinda Anaman, PMP</title>
+<meta name="description" content="Case study: coordinating identity, payment, vendor and regulatory dependencies for a pre-launch regulated crypto exchange in Ghana's SEC sandbox.">
+<link rel="canonical" href="https://berlindaanaman.com/work/hyro/">
+<meta name="theme-color" content="#FAF7F2">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Berlinda Anaman">
+<meta property="og:title" content="HYRO Exchange — Case study by Berlinda Anaman, PMP">
+<meta property="og:description" content="Case study: coordinating identity, payment, vendor and regulatory dependencies for a pre-launch regulated crypto exchange in Ghana's SEC sandbox.">
+<meta property="og:url" content="https://berlindaanaman.com/work/hyro/">
+<meta property="og:image" content="https://berlindaanaman.com/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://berlindaanaman.com/assets/img/og.jpg">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="../../">Berlinda Anaman<span>.</span></a>
+    <ul>
+      <li><a href="../../#work">Work</a></li>
+      <li class="opt"><a href="../../#products">Products</a></li>
+      <li><a href="../../#about">About</a></li>
+      <li><a class="cta" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+<section class="cs-hero">
+  <div class="wrap">
+    <a class="crumb" href="../../#work">← All work</a>
+    <div class="case-meta"><span class="badge pre">Pre-launch</span><span class="sector">Fintech · Regulated · Ghana SEC sandbox</span></div>
+    <h1>Getting a regulated crypto exchange to launch when the critical path runs through other people</h1>
+    <p class="lede">HYRO is building Ghana's first regulated digital-asset exchange inside the Ghana SEC sandbox. My job was to turn a web of identity, payment, vendor and regulatory dependencies into a plan the team could build against.</p>
+    <dl class="facts"><div><dt>Role</dt><dd>Project manager</dd></div><div><dt>Team</dt><dd>Founders, product manager, engineers, external vendor Flexx</dd></div><div><dt>Stage</dt><dd>Pre-launch, waitlist open</dd></div><div><dt>Timeline</dt><dd>Jul 2026 – present</dd></div><div><dt>Product</dt><dd><a href="https://hyro.to/" target="_blank" rel="noopener">hyro.to ↗</a></dd></div></dl>
+    <figure class="cs-figure" style="margin-top:40px">
+      <div class="shot"><img src="../../assets/img/hyro-wide.jpg" width="1800" height="838" alt="HYRO homepage: Ghana's first regulated digital asset exchange, building in the Ghana SEC sandbox"></div>
+      <figcaption>The public site is live with a waitlist. Trading hasn't opened yet.</figcaption>
+    </figure>
+  </div>
+</section><section class="cs-section">
+  <div class="wrap cs-grid">
+    <h2><span class="num">01</span>The problem</h2>
+    <div class="prose">
+<p>An exchange looks like trading and swaps. Underneath, it's registration, authentication, identity verification, AML, wallets, payments, fiat on- and off-ramp and settlement. Most of those depend on outside providers and regulators.</p>
+<p>The deciding constraint: <b>nobody can trade until they're verified.</b> So the critical path wasn't the trading engine. It was compliant onboarding, which depended on a reliable identity provider and regulatory clearance.</p></div>
+  </div>
+</section><section class="cs-section">
+  <div class="wrap cs-grid">
+    <h2><span class="num">02</span>Evidence</h2>
+    <div class="prose">
+<p>HYRO is one of 11 firms admitted to Ghana's SEC regulatory sandbox under the Virtual Asset Service Providers Act, 2025. That sets clear expectations for identity, AML and data protection before launch.</p>
+<p>Reviewing the external vendor's MVP proposal showed where scope and quality fell short of what a regulated product needs, especially around deployment, responsibilities and third-party providers.</p>
+<p>I structured the work into a 60+ item backlog across 10 workstreams, including KYC, identity verification, authentication, payments, on/off-ramp, settlement, wallets, frontend, backend, vendor integrations and data protection. That made the dependencies visible to everyone.</p></div>
+  </div>
+</section><section class="cs-section">
+  <div class="wrap cs-grid">
+    <h2><span class="num">03</span>Decisions and trade-offs</h2>
+    <div class="prose"><div class="decision"><h3>Verify against the national ID source</h3><p><span class="k">Decision</span>We looked at a turnkey KYC vendor (Sumsub) and a direct integration with Ghana's National Identification Authority, and chose NIA's remote facial verification.</p><p><span class="k">Trade-off</span>More authoritative, but far more coordination and paperwork than a plug-in vendor.</p></div><div class="decision"><h3>Production on AWS, not Vercel</h3><p><span class="k">Decision</span>The vendor proposed Vercel. I moved production deployment to AWS so environment issues are settled before handoff for testing.</p><p><span class="k">Trade-off</span>More setup up front for fewer surprises in testing.</p></div><div class="decision"><h3>A clear line between HYRO and the vendor</h3><p><span class="k">Decision</span>HYRO owns KYC, AML rules, payments, on/off-ramp, settlement, authentication, backend and integrations. Flexx owns the exchange engine, swaps and trading, and parts of the frontend.</p><p><span class="k">Trade-off</span>Clear accountability, but more handoffs to manage, so I kept the internal team building rather than waiting on vendor deliverables.</p></div><div class="decision"><h3>Cost versus scope on integrations</h3><p><span class="k">Decision</span>Compared vendor-proposed providers with in-country alternatives, and swapped in lower-cost options only where they cleared our security and quality bar.</p><p><span class="k">Trade-off</span>More evaluation time for a lower running cost.</p></div></div>
+  </div>
+</section><section class="cs-section">
+  <div class="wrap cs-grid">
+    <h2><span class="num">04</span>Execution</h2>
+    <div class="prose">
+<h3 style="margin-top:0">The onboarding flow we're building toward</h3>
+<ol><li>A new user signs up</li><li>They take a live selfie</li><li>The selfie is checked against national identity records</li><li>HYRO receives the result</li><li>Verified users continue, and failed checks stop access</li></ol>
+<div class="split"><div><h3>What I did</h3><ul><li>Set up MVP scope, roadmap, governance and the 60+ item backlog</li><li>Ran the NIA process: sent the team to learn the process, prepared the application and organisation profile, chose the service, and put the API into the next sprint</li><li>Took a stalled Data Protection registration from application to a provisional certificate</li><li>Wrote the compliance module requirements: KYC tiers, risk assessment, AML monitoring, alerts and audit trails</li><li>Led vendor reviews and kept responsibilities clear</li><li>Built an AI workflow that turns meeting notes into Jira tasks, Confluence pages and Slack reminders</li></ul></div><div><h3 style="color:var(--faint)">What the team did</h3><ul><li>The product manager and developers designed the detailed KYC user flow</li><li>Developers built the integrations</li><li>Founders own the vision, fundraising and regulatory relationships</li><li>Flexx builds the exchange engine and trading</li></ul></div></div></div>
+  </div>
+</section><section class="cs-section">
+  <div class="wrap cs-grid">
+    <h2><span class="num">05</span>Outcomes</h2>
+    <div class="prose"><div class="outcomes"><div><b>60+</b><span>Backlog items across 10 workstreams</span></div><div><b>In testing</b><span>NIA facial-verification backend integration</span></div><div><b>Secured</b><span>Provisional Data Protection certificate</span></div></div>
+<p><b>Where it stands:</b> HYRO is pre-launch with a waitlist. The frontend shows the journey with simulated data. Next, the backend verification connects to the frontend once the vendor delivers the UI, and then the product manager and I test the full KYC flow end to end.</p></div>
+  </div>
+</section><section class="cs-section">
+  <div class="wrap cs-grid">
+    <h2><span class="num">06</span>What I learned</h2>
+    <div class="prose">
+<ul><li><b>In regulated fintech, the critical path runs through compliance and third parties, not the codebase.</b></li>
+<li><b>Sequence around dependency readiness, not feature lists.</b> Build what you can while you unblock what you can't.</li>
+<li><b>A stalled dependency needs an owner.</b> The Data Protection registration moved once someone took it end to end.</li></ul></div>
+  </div>
+</section><div class="wrap next"><span class="muted">Next case study</span><a class="big" href="../doctorevs/">Doctorevs →</a></div>
+</main>
+<footer id="contact" class="contact" style="padding-top:72px">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow" style="color:#C9B27E">Contact</p>
+        <h2>Want to talk about this work?</h2>
+        <p class="lede" style="margin-top:18px">Open to fully remote product and technical project roles, with 3 weeks' notice.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="mailto:berlana.d@gmail.com">Email me</a>
+          <a class="btn btn-secondary" href="../../resume/Berlinda-Anaman-Resume.pdf" download>Download résumé</a>
+        </div>
+      </div>
+      <dl>
+        <div><dt>Email</dt><dd><a href="mailto:berlana.d@gmail.com">berlana.d@gmail.com</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/berlinda-anaman/" target="_blank" rel="noopener">linkedin.com/in/berlinda-anaman</a></dd></div>
+        <div><dt>Location</dt><dd>Accra, Ghana · working remotely</dd></div>
+      </dl>
+    </div>
+    <div class="foot"><span>© 2026 Berlinda Anaman</span><a href="../../">Back to portfolio</a></div>
+  </div>
+</footer>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

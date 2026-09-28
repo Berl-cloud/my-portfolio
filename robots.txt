@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://berlindaanaman.com/sitemap.xml
